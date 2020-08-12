@@ -1,3 +1,17 @@
+<h3>Simple Airbnb</h3>
+<img src="https://source.unsplash.com/random/800x200" alt="" style="width: 100%">
 <div class="container">
-	<h2><%= @flat.name %></h2>
+	<div class="card">
+		<div class="card-body">
+			<h1><%= @flat.name %></h1>
+			<h3><%= @flat.address %></h3>
+		</div>
+	</div>
+	<div class="card">
+		<div class="card-body">
+			<h3>A bit more about this flat</h3>
+			<p><%= @flat.description %></p>
+		</div>
+	</div>
 </div>
+<%= link_to 'Back to flat list', flats_path %>
